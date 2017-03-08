@@ -73,6 +73,7 @@
       'lib/renderer/extensions/i18n.js',
       'lib/renderer/extensions/storage.js',
       'lib/renderer/extensions/web-navigation.js',
+      'lib/worker/init.js',
     ],
     'browserify_entries': [
       'lib/renderer/api/ipc-renderer-setup.js',
