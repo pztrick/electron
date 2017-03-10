@@ -12,6 +12,7 @@
 #include "atom/common/api/api_messages.h"
 #include "atom/common/api/atom_bindings.h"
 #include "atom/common/api/event_emitter_caller.h"
+#include "atom/common/asar/asar_util.h"
 #include "atom/common/color_util.h"
 #include "atom/common/native_mate_converters/value_converter.h"
 #include "atom/common/node_bindings.h"
@@ -227,6 +228,7 @@ AtomRendererClient::AtomRendererClient()
 }
 
 AtomRendererClient::~AtomRendererClient() {
+  asar::ClearArchives();
 }
 
 void AtomRendererClient::RenderThreadStarted() {
